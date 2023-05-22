@@ -40,3 +40,11 @@ h2{
 .clicking:hover{
     opacity: 70%;
 }
+.ChangeName{
+    margin-left: 45%;
+    padding: auto;
+    margin-top: 5px;
+}
+.ChangeName:hover{
+    opacity: 70%;
+}
