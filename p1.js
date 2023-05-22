@@ -5,7 +5,17 @@ imgs.push('dice3.png');
 imgs.push('dice4.png');
 imgs.push('dice5.png');
 imgs.push('dice6.png');
-
+let p1,p2;
+function editnames(){
+    p1 = prompt("Please Enter the Name of p1: ");
+   if(p1 != null){
+    document.querySelector(".p1").innerHTML = p1;
+   }
+    p2 = prompt("Please Enter the Name of p2: ");
+   if(p2 != null){
+    document.querySelector(".p2").innerHTML = p2;
+   }
+}
 
 function diceroll(){
     setTimeout(function() {
@@ -19,10 +29,10 @@ function diceroll(){
             document.querySelector("h2").innerHTML = "Draw!";
         }
         else if (res > ans) {            
-            document.querySelector("h2").innerHTML = ("Player1 WINS!");
+            document.querySelector("h2").innerHTML = (p1 + " WINS!");
         }
         else{
-            document.querySelector("h2").innerHTML = ("Player2 WINS!");
+            document.querySelector("h2").innerHTML = (p2 +  " WINS!");
         }
     },1000);
 }
